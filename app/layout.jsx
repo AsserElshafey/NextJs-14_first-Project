@@ -1,12 +1,12 @@
-import '@styles/globals.css';
-import { Children } from 'react';
+import '@/styles/globals.css';
+
 
 export const metadata = {
   title: "Promtopia",
   description: "Discover & Share AI Prompts"
 }
 
-const Rootlayout = () => {
+const Rootlayout = ({ children }) => {
   return (
     <html lang='en'>
       <body>
@@ -14,7 +14,7 @@ const Rootlayout = () => {
           <div className='gradient' />
         </div>
         <main className='app'>
-          {Children}
+          {children}
         </main>
       </body>
     </html>
